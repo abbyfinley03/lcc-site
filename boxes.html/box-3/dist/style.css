@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>boxes demo page</title>
+
+  <style>
+    /* the following is the box-sizing reset */
+
+    /* 
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    */
+
+    /* now back to regular styling */
+    body {
+      color: #14080E;
+      background-color: #E8E5E7;
+    }
+
+    header {}
+
+    main {}
+
+    #one {
+      background-color:pink;
+      width:30rem;
+      border:10px dashed;
+      padding:20px;
+      margin-right:;400px;
+       }
+
+#two {
+       background-color:fuchsia;
+      padding:20px;
+    width:500px;
+  margin-right:;400px;
+     
+    }
+
+    #three {
+      background-color:purple;
+      padding:20px;
+      width:500px;
+      margin-right:400px;
+    }
+
+    #four {
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>web demo for exploring the box model in web pages</h1>
+  </header>
+
+  <main>
+    <!-- a box is called a div in html -->
+
+    <div id="one">
+      <p>content goes here.</p>
+      <p>content goes here.</p>
+      <p>content goes here.</p>
+      <p>content goes here.</p>
+    </div>
+
+    <div id="two">
+      <p>how are you?.</p>
+    </div>
+
+    <!-- this div has another div inside it -->
+    <div id="three">
+      <div id="four">
+        <p>digital media class 
+      </div>
+      <p>content goes here.</p>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
