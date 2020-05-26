@@ -6,8 +6,7 @@
     <title>animations</title>
 	
     <style>
-    <div id="one">
-    *{
+    <div id="one"> {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -46,18 +45,18 @@ span{
 
 	animation: letter 3s ease-in-out infinite alternate;
 }
-@keyframes span {
+ span {
 	0%,30%{ margin: 0 15px; }
 	70%,100%{ margin: 0 5px; }
 }
-@keyframes letter {
+ letter {
 	0%,30%{ width: 27px; }
 	70%,100%{ width: 30vw; }
 }
 </div>
 
-<div id="two">
-@import url('https://fonts.googleapis.com/css?family=Poppins:900&display=swap');
+<div id="two">  {
+url('https://fonts.googleapis.com/css?family=Poppins:900&display=swap');
 
 :root {
 	--blue: blue;
@@ -116,7 +115,7 @@ svg {
 	position: absolute;
 }
 
-@keyframes move {
+ move {
 	0%, 100% {
 		transform: translate(370px);
 	}
@@ -126,7 +125,7 @@ svg {
 	}
 }
 
-@keyframes drop_effect {
+drop_effect {
 	0% {
 		left: 0px;
 	}
@@ -152,9 +151,10 @@ svg {
 </div>
 
 <div id="three">
+      {
 
 /* bigshot one font */
-@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 
 body,html{margin:0;padding:0;height:100%;}
 body{
@@ -167,6 +167,7 @@ body{
   align-items:center;
 }
 svg{font-weight:bold;max-width:600px;height:100%;}
+      
 
 </div>
 
@@ -177,6 +178,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 <!-- style is how you add elements to your html -->
 <body>
 <div id="one">
+  {
 	<span>a</span>
 	<span>b</span>
 	<span>r</span>
@@ -186,10 +188,12 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 	<span>n</span>
 	<span>n</span>
   	<span>a</span>
-
+}
+  
 </div>
 
 <div id="two">
+  {
 <div class="container">
 	<span>abrianna</span>
 	<span class="drop"></span>
@@ -204,10 +208,12 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 		</filter>
 	</defs>
 </svg>
+  }
 </div>
 
 <div id="three">
-<svg viewbox="0 0 100 20">
+{
+  <svg viewbox="0 0 100 20">
   <defs>
     <linearGradient id="gradient">
       <stop color="#000"/>
@@ -228,12 +234,11 @@ svg{font-weight:bold;max-width:600px;height:100%;}
   </defs>
   <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">digital media</text>
   <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">digital media</text>
+  ]
  
 </svg>
+  
 </div>
-
-
-
 </body>
 
 </html>
