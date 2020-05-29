@@ -25,7 +25,7 @@ body{
 @keyframes span{
 	margin: 0 15px;
 	line-height: .7;
-  text-shadow: 0 0 2px rgba(0, 0, 0, .75);
+  text-shadow: 0 0 2px rgba(0, 0, 0, .45);
 }
 {
      animation:span 3s ease-in infinite alternate;
@@ -38,14 +38,14 @@ body{
 @keyframes letter{
 	display: inline-flex;
 	height: 30px;
-	width: 30px;
+	width: 27px;
 	/* border: 2.5px solid aqua; */
 	border: 5px black;
 border-radius: 14px;
 box-shadow:
-0 0 7px rgba(0, 0, 0, .75),
-inset 0 0 .75px rgba(0, 0, 0, .45);
-  { animation: letter 10s ease-in-out infinite alternate;}
+0 0 2px rgba(0, 0, 0, .75),
+inset 0 0 .2px rgba(0, 0, 0, .45);
+animation: letter 3s ease-in-out infinite alternate;}
   span {
 	0%,30%{ margin: 0 15px; }
   70%,100%{ margin: 0 5px;}
@@ -155,7 +155,7 @@ svg {
 
 body,html{margin:0;padding:0;height:100%;}
 body{
-  background: white;
+  background: black;
   background-size:cover;
   font-family: 'Cabin Condensed', sans-serif;
   display:flex;
@@ -171,7 +171,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 <!-- style is how you add elements to your html -->
 <body>
 <div id="one">
-  {
+	
   <span>a</span>
 	<span>b</span>
 	<span>r</span>
@@ -181,7 +181,6 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 	<span>n</span>
 	<span>n</span>
   <span>a</span>
-  }
 </div>
 
 <div id="two">
