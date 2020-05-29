@@ -7,7 +7,7 @@
 	
     <style>
 <div id="one"> 
-*{/
+*{
   padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -22,20 +22,20 @@ body{
 	font-size: 42px;
 	background: white;
 }
-span{/
+@keyframes span{
 	margin: 0 15px;
 	line-height: .7;
   text-shadow: 0 0 2px rgba(0, 0, 0, .75);
 }
 {
-  animation:span 3s ease-in infinite alternate;
+     animation:span 3s ease-in infinite alternate;
 }
 .main{
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 }
-.letter{
+@keyframes letter{
 	display: inline-flex;
 	height: 30px;
 	width: 30px;
@@ -46,7 +46,7 @@ box-shadow:
 0 0 7px rgba(0, 0, 0, .75),
 inset 0 0 .75px rgba(0, 0, 0, .45);
   { animation: letter 10s ease-in-out infinite alternate;}
-  span {/
+  span {
 	0%,30%{ margin: 0 15px; }
   70%,100%{ margin: 0 5px;}
     letter {
@@ -74,7 +74,7 @@ body {
 	color: var(--blue);
 }
 
-.container {/
+.container {
 	filter: url('#gooey');
 	display: flex;
 	justify-content: center;
@@ -115,7 +115,7 @@ svg {
 	position: absolute;
 }
 
- move {
+ @keyframes move {
 	0%, 100% {
 		transform: translate(370px);
 	}
@@ -125,7 +125,7 @@ svg {
 	}
 }
 
-drop_effect {
+@keyframes drop_effect {
 	0% {
 		left: 0px;
 	}
@@ -202,7 +202,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 </div>
 
 <div id="three">
-  {}{}{}{}{}{}{}{}{}{}{}{}{}
+  {
 <svg viewbox="0 0 100 20">
   <defs>
     <linearGradient id="gradient">
