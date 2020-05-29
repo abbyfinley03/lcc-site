@@ -6,8 +6,9 @@
     <title>animations</title>
 	
     <style>
-    <div id="one"> {
-	padding: 0;
+<div id="one"> 
+*{/
+  padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -17,15 +18,17 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 	font-size: 42px;
-	background: #f7f7f7;
+	background: white;
 }
-span{
+span{/
 	margin: 0 15px;
 	line-height: .7;
-	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
-	animation: span 3s ease-in infinite alternate;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .75);
+}
+{
+  animation:span 3s ease-in infinite alternate;
 }
 .main{
 	display: flex;
@@ -35,25 +38,22 @@ span{
 .letter{
 	display: inline-flex;
 	height: 30px;
-	width: 27px;
+	width: 30px;
 	/* border: 2.5px solid aqua; */
-	border: 5px aqua;
-	border-radius: 14px;
-	box-shadow:
-		0 0 2px rgba(0, 0, 0, .75),
-		inset 0 0 2px rgba(0, 0, 0, .45);
-
-	animation: letter 3s ease-in-out infinite alternate;
-}
- span {
+	border: 5px black;
+border-radius: 14px;
+box-shadow:
+0 0 7px rgba(0, 0, 0, .75),
+inset 0 0 .75px rgba(0, 0, 0, .45);
+  { animation: letter 10s ease-in-out infinite alternate;}
+  span {/
 	0%,30%{ margin: 0 15px; }
-	70%,100%{ margin: 0 5px; }
-}
- letter {
+  70%,100%{ margin: 0 5px;}
+    letter {
 	0%,30%{ width: 27px; }
-	70%,100%{ width: 30vw; }
-}
-</div>
+	70%,100%{ width: 30vw; 
+  }
+  </div>
 
 <div id="two">  {
 url('https://fonts.googleapis.com/css?family=Poppins:900&display=swap');
@@ -74,7 +74,7 @@ body {
 	color: var(--blue);
 }
 
-.container {
+.container {/
 	filter: url('#gooey');
 	display: flex;
 	justify-content: center;
@@ -149,16 +149,13 @@ drop_effect {
 	}
 }
 </div>
-
 <div id="three">
-      {
-
 /* bigshot one font */
-url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 
 body,html{margin:0;padding:0;height:100%;}
 body{
-  background: black;
+  background: white;
   background-size:cover;
   font-family: 'Cabin Condensed', sans-serif;
   display:flex;
@@ -167,10 +164,6 @@ body{
   align-items:center;
 }
 svg{font-weight:bold;max-width:600px;height:100%;}
-      
-
-</div>
-
 
     </style>
 </head>
@@ -179,7 +172,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 <body>
 <div id="one">
   {
-	<span>a</span>
+  <span>a</span>
 	<span>b</span>
 	<span>r</span>
 	<span>i</span>
@@ -187,33 +180,30 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 	<span class="letter"></span>
 	<span>n</span>
 	<span>n</span>
-  	<span>a</span>
-}
-  
+  <span>a</span>
+  }
 </div>
 
 <div id="two">
-  {
-<div class="container">
-	<span>abrianna</span>
-	<span class="drop"></span>
-</div>
-
+  <div class="container">
+    <span>abrianna</span>
+<span class="drop"></span>
+    </div>
 <svg>
 	<defs>
 		<filter id="gooey">
 			<feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
 			<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -20" result="gooey" />
-			<feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+	<feComposite in="SourceGraphic" in2="gooey" operator="atop" />
 		</filter>
 	</defs>
 </svg>
-  }
+  
 </div>
 
 <div id="three">
-{
-  <svg viewbox="0 0 100 20">
+  {}{}{}{}{}{}{}{}{}{}{}{}{}
+<svg viewbox="0 0 100 20">
   <defs>
     <linearGradient id="gradient">
       <stop color="#000"/>
@@ -232,12 +222,10 @@ svg{font-weight:bold;max-width:600px;height:100%;}
       </path>
     </pattern>
   </defs>
-  <text text-anchor="middle" x="50" y="15" font-size="30" fill="white" fill-opacity="0.1">digital media</text>
-  <text text-anchor="middle" x="50" y="15" font-size="30" fill="url(#wave)"  fill-opacity="1">digital media</text>
-  ]
+  <text text-anchor="middle" x="50" y="15" font-size="15" fill="white" fill-opacity="0.1">digital media</text>
+  <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="1">digital media</text>
  
 </svg>
-  
 </body>
 
 </html>
